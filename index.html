@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <title>Pizza</title>
 <meta charset="UTF-8">
@@ -24,16 +24,25 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
   
 <body>
 
+  
 <!-- Navbar (sit on top) -->
 <div class="uj-top uj-hide-small">
-  <div class="uj-bar uj-xlarge uj-black uj-opacity uj-hover-opacity-off" id="myNavbar">
+  <div class="uj-bar " id="myNavbar">
     <a href="#home" class="uj-bar-item uj-button">HOME</a>
     <a href="#menu" class="uj-bar-item uj-button">MENU</a>
     <a href="#about" class="uj-bar-item uj-button">ABOUT</a>
     <a href="#contact" class="uj-bar-item uj-button">CONTACT</a>
   </div>
 </div>
-  
+
+  <button class="js-notify-btn">Notify me!</button>
+  <button disabled class="js-push-btn">Enable Push Messaging</button><br><br>
+  <section class="js-sub-endpoint" style="display:none;width:80%">
+    <h3>Subscription Object:</h3>
+    <code class="js-subscription-json"></code><br><br><br>
+    <h3>Endpoint URL:</h3>
+    <code class="js-endpoint-url"></code>
+  </section>
 <!-- Header with image -->
 <header class="bgimg uj-display-container uj-grayscale-min" id="home">
   <div class="uj-display-bottomleft uj-padding">
